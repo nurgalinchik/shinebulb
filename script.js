@@ -1,5 +1,4 @@
 let counter = 0;
-
 let audioFiles = ["audio/on.mp3", "audio/off.mp3"];
 
 for (let i = 0; i < audioFiles.length; i++) {
@@ -12,7 +11,6 @@ img.src = "images/on.svg";
 img.load();
 
 function pictureChange() {
-
 
     let bulb = document.getElementById("lightbulb");
     let text = document.getElementById("text");
