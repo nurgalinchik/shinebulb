@@ -38,9 +38,8 @@ body {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: rgb(35, 35, 35);
-  font-weight: bold;
 }
 
 a:hover {
@@ -53,5 +52,7 @@ a {
 }
 
 p {
+  font-size: 0.75rem;
+  color: rgb(35, 35, 35);
   text-align: center;
 }
