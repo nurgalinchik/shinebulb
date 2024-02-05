@@ -29,16 +29,21 @@ body {
 
 #lightbulb {
   transition: transform 0.1s ease-in-out;
-  transform: rotate(-10deg);
+  transform: rotate(-5deg);
 }
 
 #lightbulb.on {
-  transform: rotate(10deg);
+  transform: rotate(5deg);
 }
 
+h2 {
+  font-size: 3rem;
+  color: rgb(35, 35, 35);
+  font-weight: bold;
+}
 
 a {
-  color: grey;
+  color: rgb(35, 35, 35);
 }
 
 p {
