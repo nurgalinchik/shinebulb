@@ -47,6 +47,7 @@ a:hover {
 }
   
 .header {
+  margin-top: -2rem;
   display: inline-flex;
 }
   
@@ -54,5 +55,5 @@ a:hover {
   height: 7.4rem;
   margin-left: -1.1rem;
   margin-right: -0.7rem;
-  margin-top: 2.4rem;
+  margin-top: 2.3rem;
 }
