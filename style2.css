@@ -17,22 +17,13 @@ html, body {
   font-family: Avro;
   height: 100%;
 }
-  
-body {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #f4f0e8;
-}
 
 p {
   font-size: 3.1rem;
   color: rgb(39, 39, 39);
   font-weight: bold;
 }
-  
+
 a {
   text-decoration: none;
   margin: 0.4rem;
@@ -40,7 +31,7 @@ a {
   color: rgb(39, 39, 39);
   font-weight: bold;
 }
-  
+
 a:hover {
   text-decoration: underline;
   color: rgb(84, 84, 84);
@@ -50,10 +41,20 @@ a:hover {
   margin-top: -2rem;
   display: inline-flex;
 }
-  
+
 .header img {
   height: 7.4rem;
   margin-left: -1.1rem;
   margin-right: -0.7rem;
-  margin-top: 2.3rem;
+  margin-top: 2.2rem;
+}
+
+body {
+overflow: hidden;
+display: flex;
+justify-content: center;
+vertical-align: middle;
+align-items: center;
+flex-direction: column;
+background-color: #f4f0e8;
 }
