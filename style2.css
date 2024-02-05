@@ -1,77 +1,59 @@
 @font-face {
-    font-family: 'Avro';
-    src: url(fonts/Arvo-Regular.ttf);
-  }
+  font-family: 'Avro';
+  src: url(fonts/Arvo-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'AvroItalic';
+  src: url(fonts/Arvo-Italic.ttf);
+}
+
+input[type=button] {
+  font-family: Avro;
+  font-size: 16px;
+}
+
+html, body {
+  font-family: Avro;
+  height: 100%;
+}
   
-  @font-face {
-    font-family: 'AvroItalic';
-    src: url(fonts/Arvo-Italic.ttf);
-  }
-  
-  input[type=button] {
-    font-family: Avro;
-    font-size: 16px;
-  }
-  
-  html, body {
-    font-family: Avro;
-    height: 100%;
-  }
-  
-  body {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #f4f0e8;
-  }
-  
-  #lightbulb {
-    transition: transform 0.1s ease-in-out;
-    transform: rotate(-10deg);
-  }
-  
-  #lightbulb.on {
-    transform: rotate(10deg);
-  }
-  
-  
-  a {
-    color: grey;
-  }
-  
-  p {
-    text-align: center;
-  }
-  
-  p {
+body {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f4f0e8;
+}
+
+p {
   font-size: 3.6rem;
   color: rgb(39, 39, 39);
   font-weight: bold;
-  }
+}
   
-  a {
+a {
   text-decoration: none;
   margin: 0.4rem;
   font-size: 1.8rem;
   color: rgb(39, 39, 39);
   font-weight: bold;
-  }
+}
   
-  a:hover {
+a:hover {
   text-decoration: underline;
-  color: rgb(57, 57, 57);
-  }
+  color: grey;
+}
   
-  .header {
+.header {
   margin-top: -2.4rem;
   display: inline-flex;
-  }
+}
   
-  .header img {
+.header img {
   height: 8rem;
-  margin-left: -1.52rem;
-  margin-right: -1.12rem;
+  margin-left: -1.5rem;
+  margin-right: -1.1rem;
   margin-top: 2.9rem;
-  }
+}
