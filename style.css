@@ -44,3 +44,34 @@ a {
 p {
   text-align: center;
 }
+
+p {
+font-size: 4.5rem;
+color: rgb(39, 39, 39);
+font-weight: bold;
+}
+
+a {
+text-decoration: none;
+margin: 0.5rem;
+font-size: 2rem;
+color: rgb(39, 39, 39);
+font-weight: bold;
+}
+
+a:hover {
+text-decoration: underline;
+color: rgb(57, 57, 57);
+}
+
+.header {
+margin-top: -3rem;
+display: inline-flex;
+}
+
+.header img {
+height: 12rem;
+margin-left: -1.9rem;
+margin-right: -1.4rem;
+margin-top: 2.5rem;
+}
