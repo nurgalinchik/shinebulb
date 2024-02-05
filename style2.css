@@ -19,22 +19,22 @@ html, body {
 }
 
 p {
-  font-size: 3.1rem;
-  color: rgb(39, 39, 39);
+  font-size: 3rem;
+  color: rgb(35, 35, 35);
   font-weight: bold;
 }
 
 a {
   text-decoration: none;
-  margin: 0.4rem;
+  margin: 0.5rem;
   font-size: 1.5rem;
-  color: rgb(39, 39, 39);
+  color: rgb(35, 35, 35);
   font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
-  color: rgb(84, 84, 84);
+  color: rgb(70, 70, 70);
 }
   
 .header {
