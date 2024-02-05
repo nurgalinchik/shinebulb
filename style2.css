@@ -26,28 +26,10 @@
     flex-direction: column;
     background-color: #f4f0e8;
   }
-  
-  #lightbulb {
-    transition: transform 0.1s ease-in-out;
-    transform: rotate(-10deg);
-  }
-  
-  #lightbulb.on {
-    transform: rotate(10deg);
-  }
-  
-  
-  a {
-    color: grey;
-  }
-  
-  p {
-    text-align: center;
-  }
-  
+
   p {
   font-size: 4.5rem;
-  color: rgb(39, 39, 39);
+  color: rgb(25, 25, 25);
   font-weight: bold;
   }
   
@@ -55,13 +37,13 @@
   text-decoration: none;
   margin: 0.5rem;
   font-size: 2rem;
-  color: rgb(39, 39, 39);
+  color: rgb(25, 25, 25);
   font-weight: bold;
   }
   
   a:hover {
   text-decoration: underline;
-  color: rgb(57, 57, 57);
+  color: grey;
   }
   
   .header {
