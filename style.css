@@ -10,7 +10,7 @@
 
 input[type=button] {
   font-family: Avro;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 html, body {
@@ -53,7 +53,7 @@ a {
 }
 
 p {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: rgb(35, 35, 35);
   font-weight: bold;
   text-align: center;
