@@ -41,6 +41,7 @@ body {
 h2 {
   font-size: 1.5rem;
   color: rgb(35, 35, 35);
+  margin: 1rem;
   font-weight: bold;
 }
 
