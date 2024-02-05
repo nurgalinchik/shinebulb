@@ -58,6 +58,7 @@ a {
 }
 
 p {
+  margin: 0.5rem;
   font-size: 1.5rem;
   color: rgb(35, 35, 35);
   font-weight: bold;
