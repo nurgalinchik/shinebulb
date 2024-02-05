@@ -18,7 +18,6 @@ p {
   color: rgb(35, 35, 35);
   font-weight: bold;
   text-align: center;
-  margin: 1.5rem;
 }
 
 a {
@@ -34,6 +33,7 @@ a:hover {
 }
   
 .header {
+  margin: 1.5rem;
   display: inline-flex;
 }
 
