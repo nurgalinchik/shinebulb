@@ -19,7 +19,7 @@ function pictureChange() {
     if (bulb.src.endsWith("images/on.svg")) {
         new Audio("audio/on.mp3").play();
         bulb.src = "images/off.svg";
-        text.innerHTML = "sad";
+        text.innerHTML = "sad :(";
     } 
     else {
         new Audio("audio/off.mp3").play();
