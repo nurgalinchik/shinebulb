@@ -8,11 +8,6 @@
   src: url(fonts/Arvo-Italic.ttf);
 }
 
-input[type=button] {
-  font-family: Avro;
-  font-size: 16px;
-}
-
 html, body {
   font-family: Avro;
   height: 100%;
@@ -22,6 +17,7 @@ p {
   font-size: 3rem;
   color: rgb(35, 35, 35);
   font-weight: bold;
+  text-align: middle;
 }
 
 a {
@@ -38,7 +34,6 @@ a:hover {
 }
   
 .header {
-  margin-top: -2rem;
   display: inline-flex;
 }
 
