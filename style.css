@@ -51,8 +51,10 @@ a:hover {
 }
 
 a {
-  text-decorations: none;
+  text-decoration: none;
+  font-size: 1.5rem;
   color: rgb(35, 35, 35);
+  font-weight: bold;
 }
 
 p {
