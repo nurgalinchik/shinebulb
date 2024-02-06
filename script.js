@@ -34,20 +34,18 @@ function pictureChange() {
 }
 
 function clearProgress() {
-    let bulb = document.getElementById("lightbulb");
+    let bulb = document.getElementById("lightbulb")
     counter = 0;
     document.getElementById("counter").innerHTML = counter;
     localStorage.removeItem("counter");
     new Audio("audio/on.mp3").play();
     bulb.src = "images/off.svg";
-    bulb.style.transition = "transform 0.1s ease-in-out;";
-    bulb.style.transform = "rotate(-5deg);";
     text.innerHTML = "sad :(";
 }
 
 function checker() {
-    let choice = confirm(`Are you sure you want to clear the counter?`);
+    let choice = confirm(`Are you sure you want to clear the counter?`)
     if (choice) {
-        clearProgress();
+        clearProgress()
     }
 }
