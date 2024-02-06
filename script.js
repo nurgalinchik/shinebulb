@@ -1,4 +1,5 @@
-let counter = localStorage.getItem("counter") || 0;
+let counter = parseInt(localStorage.getItem("counter")) || 0;
+document.getElementById("counter").innerHTML = counter;
 let audioFiles = ["audio/on.mp3", "audio/off.mp3", "audio/happy.mp3", "audio/sussy.mp3"];
 
 for (let i = 0; i < audioFiles.length; i++) {
@@ -9,7 +10,6 @@ for (let i = 0; i < audioFiles.length; i++) {
 let img = new Image();
 img.src = "images/on.svg";
 img.load();
-counterDisplay.innerHTML = counter;
 
 function pictureChange() {
 
