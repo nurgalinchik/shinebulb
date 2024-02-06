@@ -37,4 +37,7 @@ function clearProgress() {
     counter = 0;
     document.getElementById("counter").innerHTML = counter;
     localStorage.removeItem("counter");
+    new Audio("audio/on.mp3").play();
+    bulb.src = "images/off.svg";
+    text.innerHTML = "sad :(";
 }
