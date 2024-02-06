@@ -40,6 +40,8 @@ function clearProgress() {
     localStorage.removeItem("counter");
     new Audio("audio/on.mp3").play();
     bulb.src = "images/off.svg";
+    bulb.style.transition = "transform 0.1s ease-in-out;";
+    bulb.style.transform = "rotate(-5deg);";
     text.innerHTML = "sad :(";
 }
 
