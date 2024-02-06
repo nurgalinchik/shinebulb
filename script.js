@@ -11,12 +11,11 @@ for (let i = 0; i < audioFiles.length; i++) {
 let img = new Image();
 img.src = "images/on.svg";
 img.load();
+let bulb = document.getElementById("lightbulb");
+let text = document.getElementById("text");
+let counterDisplay = document.getElementById("counter");
 
 function pictureChange() {
-
-    let bulb = document.getElementById("lightbulb");
-    let text = document.getElementById("text");
-    let counterDisplay = document.getElementById("counter");
 
     if (bulb.src.endsWith("images/on.svg")) {
         new Audio("audio/on.mp3").play();
@@ -39,10 +38,9 @@ function clearProgress() {
     counter = 0;
     document.getElementById("counter").innerHTML = counter;
     localStorage.removeItem("counter");
-    new Audio("audio/on.mp3").play();
+    new Audio("audio/off.mp3").play();
     bulb.src = "images/off.svg";
     text.innerHTML = "sad :(";
-    bulb.classList.toggle("off");
 }
 
 function checker() {
