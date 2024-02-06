@@ -32,3 +32,9 @@ function pictureChange() {
     }
     bulb.classList.toggle("on");
 }
+
+function clearProgress() {
+    counter = 0;
+    document.getElementById("counter").innerHTML = counter;
+    localStorage.removeItem("counter");
+}
