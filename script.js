@@ -1,4 +1,4 @@
-let counter = 0;
+let counter = localStorage.getItem("counter") || 0;
 let audioFiles = ["audio/on.mp3", "audio/off.mp3", "audio/happy.mp3", "audio/sussy.mp3"];
 
 for (let i = 0; i < audioFiles.length; i++) {
@@ -26,6 +26,7 @@ function pictureChange() {
         bulb.src = "images/on.svg";
         text.innerHTML = "happy!";
         counter++;
+        localStorage.setItem("counter", counter);
         counterDisplay.innerHTML = counter;
     }
     bulb.classList.toggle("on");
