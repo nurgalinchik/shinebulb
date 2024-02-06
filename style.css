@@ -29,7 +29,7 @@ body {
   background-color: #f4f0e8;
 }
 
-#lightbulb.off {
+#lightbulb {
   transition: transform 0.1s ease-in-out;
   transform: rotate(-5deg);
 }
