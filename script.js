@@ -34,6 +34,7 @@ function pictureChange() {
 }
 
 function clearProgress() {
+    let bulb = document.getElementById("lightbulb");
     counter = 0;
     document.getElementById("counter").innerHTML = counter;
     localStorage.removeItem("counter");
@@ -43,8 +44,8 @@ function clearProgress() {
 }
 
 function checker() {
-    let choice = confirm(`Are you sure you want to clear the counter?`)
+    let choice = confirm(`Are you sure you want to clear the counter?`);
     if (choice) {
-        clearProgress()
+        clearProgress();
     }
 }
