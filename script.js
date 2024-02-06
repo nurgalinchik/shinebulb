@@ -13,11 +13,9 @@ img.src = "images/on.svg";
 img.load();
 
 function pictureChange() {
-
     let bulb = document.getElementById("lightbulb");
     let text = document.getElementById("text");
     let counterDisplay = document.getElementById("counter");
-
     if (bulb.src.endsWith("images/on.svg")) {
         new Audio("audio/on.mp3").play();
         bulb.src = "images/off.svg";
@@ -34,20 +32,22 @@ function pictureChange() {
     bulb.classList.toggle("on");
 }
 
-function clearProgress() {
-    let bulb = document.getElementById("lightbulb")
+function resetCounter() {
+    let bulb = document.getElementById("lightbulb");
     counter = 0;
     document.getElementById("counter").innerHTML = counter;
     localStorage.removeItem("counter");
-    new Audio("audio/on.mp3").play();
+    new Audio("audio/off.mp3").play();
+    if (bulb.src.endsWith("images/on.svg")) {
+        bulb.classList.toggle("on");
+    }
     bulb.src = "images/off.svg";
     text.innerHTML = "sad :(";
-    bulb.classList.toggle("off");
 }
 
 function checker() {
-    let choice = confirm(`Are you sure you want to clear the counter?`)
+    let choice = confirm(`Are you sure you want to reset the counter?`)
     if (choice) {
-        clearProgress()
+        resetCounter()
     }
 }
