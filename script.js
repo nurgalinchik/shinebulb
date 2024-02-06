@@ -38,3 +38,10 @@ function clearProgress() {
     document.getElementById("counter").innerHTML = counter;
     localStorage.removeItem("counter");
 }
+
+function checker() {
+    let choice = confirm(`Are you sure you want to clear the counter?`)
+    if (choice) {
+        clearProgress()
+    }
+}
