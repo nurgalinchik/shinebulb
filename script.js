@@ -38,11 +38,11 @@ function clearProgress() {
     document.getElementById("counter").innerHTML = counter;
     localStorage.removeItem("counter");
     new Audio("audio/off.mp3").play();
-    bulb.src = "images/off.svg";
-    text.innerHTML = "sad :(";
     if (bulb.src.endsWith("images/on.svg")) {
         bulb.classList.toggle("on");
     }
+    bulb.src = "images/off.svg";
+    text.innerHTML = "sad :(";
 }
 
 function checker() {
