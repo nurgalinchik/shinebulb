@@ -43,6 +43,7 @@ function clearProgress() {
     bulb.style.transition = "transform 0.1s ease-in-out;";
     bulb.style.transform = "rotate(-5deg);";
     text.innerHTML = "sad :(";
+    bulb.classList.toggle("off");
 }
 
 function checker() {
