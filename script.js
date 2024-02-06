@@ -40,7 +40,9 @@ function clearProgress() {
     new Audio("audio/off.mp3").play();
     bulb.src = "images/off.svg";
     text.innerHTML = "sad :(";
-    bulb.classList.toggle("on");
+    if (bulb.src.endsWith("images/on.svg")) {
+        bulb.classList.toggle("on");
+    }
 }
 
 function checker() {
