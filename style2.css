@@ -53,3 +53,19 @@ align-items: center;
 flex-direction: column;
 background-color: #f4f0e8;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1.4rem 0;
+}
+
+.footer a{
+  font-size: 1rem;
+  color: rgb(125, 123, 123);
+}
+
+.footer a:hover {
+  color: rgb(97, 97, 97);
+  text-decoration: none;
+}

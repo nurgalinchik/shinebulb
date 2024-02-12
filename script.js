@@ -1,7 +1,8 @@
 let counter = parseInt(localStorage.getItem("counter")) || 0;
 document.getElementById("counter").innerHTML = counter;
-let audioFiles = ["audio/on.mp3", "audio/off.mp3", "audio/happy.mp3", "audio/sussy.mp3"];
+let audioFiles = ["audio/on.mp3", "audio/off.mp3"];
 
+let bulb = document.getElementById("lightbulb");
 bulb.classList.toggle("off");
 for (let i = 0; i < audioFiles.length; i++) {
     let audio = new Audio(audioFiles[i]);
@@ -10,10 +11,8 @@ for (let i = 0; i < audioFiles.length; i++) {
 
 let img = new Image();
 img.src = "images/on.svg";
-img.load();
 
 function pictureChange() {
-    let bulb = document.getElementById("lightbulb");
     let text = document.getElementById("text");
     let counterDisplay = document.getElementById("counter");
     if (bulb.src.endsWith("images/on.svg")) {
@@ -33,7 +32,6 @@ function pictureChange() {
 }
 
 function resetCounter() {
-    let bulb = document.getElementById("lightbulb");
     counter = 0;
     document.getElementById("counter").innerHTML = counter;
     localStorage.removeItem("counter");
