@@ -1,12 +1,12 @@
 let counter = parseInt(localStorage.getItem("counter")) || 0;
-document.getElementById("counter").innerHTML = counter;
+let bulb = document.getElementById("lightbulb");
 let audioFiles = ["audio/on.mp3", "audio/off.mp3"];
 
-let bulb = document.getElementById("lightbulb");
+document.getElementById("counter").innerHTML = counter;
 bulb.classList.toggle("off");
-for (let i = 0; i < audioFiles.length; i++) {
-    let audio = new Audio(audioFiles[i]);
-    audio.load();
+
+for (audio of audioFiles) {
+    new Audio(audio).load();
 }
 
 let img = new Image();
