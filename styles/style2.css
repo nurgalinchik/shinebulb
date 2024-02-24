@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Avro';
-  src: url(fonts/Arvo-Regular.ttf);
+  src: url(/fonts/Arvo-Regular.ttf);
 }
 
 @font-face {
   font-family: 'AvroItalic';
-  src: url(fonts/Arvo-Italic.ttf);
+  src: url(/fonts/Arvo-Italic.ttf);
 }
 
 html, body {
@@ -68,4 +68,30 @@ background-color: #f4f0e8;
 .footer a:hover {
   color: rgb(97, 97, 97);
   text-decoration: none;
+}
+
+/* DARK MODESSS */
+
+.darkMode p {
+  color: rgb(220, 220, 220);
+}
+
+.darkMode a {
+  color: rgb(220, 220, 220);
+}
+
+.darkMode a:hover {
+  color: rgb(200, 200, 200);
+}
+
+.darkMode {
+  background-color: rgb(23, 23, 23);
+}
+
+.darkMode .footer a{
+  color: rgb(190, 190, 190);
+}
+
+.darkMode .footer a:hover {
+  color: rgb(170, 170, 170);
 }

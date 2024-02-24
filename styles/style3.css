@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Avro';
+    src: url(/fonts/Arvo-Regular.ttf);
+}
+  
+@font-face {
+    font-family: 'AvroItalic';
+    src: url(/fonts/Arvo-Italic.ttf);
+}
+  
+html, body {
+    font-family: Avro;
+    height: 100%;
+}
+  
+body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    vertical-align: middle;
+    background-color: #f4f0e8;
+    transition: background-color 0.5s ease;
+}
+  
+h2 {
+    font-size: 2.4rem;
+    color: rgb(35, 35, 35);
+    margin: 0 0 5rem;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.settingName {
+    font-size: 1.5rem;
+    transition: background-color 0.5s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(70, 70, 70);
+}
+
+a {
+    margin: 5rem 0 0;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(35, 35, 35);
+    transition: background-color 0.5s ease;
+}
+
+#modeToggle {
+    font-family: Avro;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: rgb(220, 220, 220);
+    border: rgb(43, 43, 43) 3px solid;
+    color: rgb(43, 43, 43);
+    transition: background-color 0.5s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 70%;
+    }
+}
+
+.darkMode {
+    background-color: rgb(23, 23, 23);
+}
+
+.darkMode .settingName, .darkMode h2, .darkMode a {
+    color: rgb(220, 220, 220);
+}
+
+.darkMode a:hover {
+    color: rgb(200, 200, 200);
+}
+
+.darkMode #modeToggle {
+    background-color: rgb(43, 43, 43);
+    border: rgb(220, 220, 220) 3px solid;
+    color: rgb(220, 220, 220);
+}

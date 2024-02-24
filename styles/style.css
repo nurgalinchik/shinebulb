@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Avro';
+  src: url(/fonts/Arvo-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'AvroItalic';
+  src: url(/fonts/Arvo-Italic.ttf);
+}
+
+input[type=button] {
+  font-family: Avro;
+  font-size: 1rem;
+  border-radius: 3px;
+  padding: 3px 5px;
+  border: rgb(43, 43, 43) 1px solid;
+  background-color: rgb(220, 220, 220);
+  color: rgb(43, 43, 43);
+}
+
+html, body {
+  font-family: Avro;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  vertical-align: middle;
+  background-color: #f4f0e8;
+}
+
+#lightbulb {
+  transition: transform 0.1s ease-in-out;
+  transform: rotate(-5deg);
+}
+
+#lightbulb.on {
+  transform: rotate(5deg);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: rgb(35, 35, 35);
+  margin: 1rem;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(70, 70, 70);
+}
+
+a {
+  margin: 0.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(35, 35, 35);
+}
+
+p {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  color: rgb(35, 35, 35);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* DARK MODESSS */
+
+.darkMode {
+  background-color: rgb(23, 23, 23);
+}
+
+.darkMode h2 {
+  color: rgb(220, 220, 220);
+}
+
+.darkMode a:hover {
+  color: rgb(200, 200, 200);
+}
+
+.darkMode a {
+  color: rgb(220, 220, 220);
+}
+
+.darkMode p {
+  color: rgb(220, 220, 220);
+}
+
+.darkMode input[type=button] {
+  border: rgb(220, 220, 220) 1px solid;
+  background-color: rgb(43, 43, 43);
+  color: rgb(220, 220, 220);
+}
