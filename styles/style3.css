@@ -67,6 +67,11 @@ a {
     border: rgb(43, 43, 43) 3px solid;
     color: rgb(43, 43, 43);
     transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+#modeToggle:hover {
+    background-color: rgb(205, 205, 205);
 }
 
 @media only screen and (max-width: 600px) {
@@ -91,4 +96,8 @@ a {
     background-color: rgb(43, 43, 43);
     border: rgb(220, 220, 220) 3px solid;
     color: rgb(220, 220, 220);
+}
+
+.darkMode #modeToggle:hover {
+    background-color: rgb(53, 53, 53);
 }
